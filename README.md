@@ -1,2 +1,2 @@
 # Tema-wdg
-Desenvolvimento do tema da wdg
+Desenvolvimento do tema da wdg!
