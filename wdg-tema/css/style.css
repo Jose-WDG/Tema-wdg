@@ -149,7 +149,7 @@ q:before, q:after {
     color: #fff;
     font-size: 80px;
     text-align: center;
-    padding: 40px;
+    padding-top: 10px;
 }
 .how-text{
     padding-top: 250px;
@@ -207,23 +207,7 @@ q:before, q:after {
     background: #2D2B6C;
 }
 
-.bar-who-expert .title-bar{
-    color: #fff;
-    font-size: 80px;
-    text-align: center;
-    padding: 40px;
-    position: relative;
-    text-align: center;
-   
-}.bar-who-servi .title-bar{
-    color: #fff;
-    font-size: 80px;
-    text-align: center;
-    padding: 40px;
-    position: relative;
-    text-align: center;
-   
-}
+
 
 
 .who-text{
@@ -346,14 +330,6 @@ q:before, q:after {
     position: absolute;
     height: 150px;
     background: #F57637;
-}.bar-what .title-bar{
-    color: #fff;
-    font-size: 80px;
-    text-align: center;
-    padding: 40px;
-    position: relative;
-    text-align: center;
-   
 }.box-what{
     position: relative;
     display: block;
@@ -486,39 +462,70 @@ q:before, q:after {
 
 }
 /*===== CONTENT WHERE =====*/
-.container-fluid .row .where{
+.where{
     position: relative;
     display: block;
     width: 100%;
-    height: 500px;
-    background: #c6c6;
+    height: auto;
+    background-color: #2D2B6B;
+    padding-top: 157px;
 }
-
+.box-where{
+    border: solid #cecece 4px;
+    z-index: 300;
+}
+.bar-where{
+    top: 243px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: 150px;
+    background:  #cecece;
+}
+.img-where{
+    top: 101px;
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background-image:  url("../img/WHERE/BG\ WHERE.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 80%;
+}
+.title-where{
+    color: #2D2B6B;
+}
+.text-where{
+    padding-top: 350px;
+    position: relative;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    line-height: 50px;
+}
+.box-map{
+    border: solid #cecece 4px;
+    height: 550px;
+}#mapa{
+    margin-bottom: 30px;
+}
 .linha{
     width: 100%;
     position: relative;
     display: block;
 }
+
 /*======== MD CSS =========*/
 
 
 
 @media only screen and (max-width: 1582px){
-    .box-how{
-        width: 1180px;
-    }
-    .box-what{
-        width: 1180px;
-    }
-    .box-who{
-        width: 1180px;
-    }
+    
     .thumb .container-thumb .thumb-bloco {
             width: 300px;
             height: 420px;
-    }.title-bar{
-        font-size: 4em;
-        padding-top: 0.5em;
     }.bar-who-expert .title-bar{
         font-size: 4em;
         padding-top: 0.5em;
@@ -539,7 +546,7 @@ q:before, q:after {
 
 /*======== MOBILE =========*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 770px){
     /* =====ESTILO DO MENU MOBILE===== */
     .what-text {
         font-size: 1.3em;
@@ -574,8 +581,9 @@ q:before, q:after {
     .bar-how{
         top: -133px;
     }.bar-how .title-bar{
-        padding: 0;
+        padding-top: 0.5em;
         font-size: 3em;
+      
     }.box-how{
         width: 100%;
         overflow: scroll;
@@ -627,5 +635,19 @@ q:before, q:after {
         padding-top: 20em;
     }#box-null{
         display: none;
+    }
+}@media only screen and (max-width: 420px){
+    .bar-how .title-bar{
+        padding: 0;
+        font-size: 2.5em;
+      
+    }
+    .bar-who-expert .title-bar{
+        padding-top: 0.9em;
+        font-size: 2.5em;
+    }
+    .bar-who-servi .title-bar {
+        font-size: 2.5em;
+        padding-top: 0.5em;
     }
 }
