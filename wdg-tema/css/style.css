@@ -542,7 +542,10 @@ q:before, q:after {
         width: 960px;
     }.thumb-servicos{
         margin: 0 auto;
+    }#box-null{
+        display: none;
     }
+}
 }
 
 
@@ -635,5 +638,7 @@ q:before, q:after {
         width: 100%;
     }.servicos{
         padding-top: 20em;
+    }#box-null{
+        display: none;
     }
 }
