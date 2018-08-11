@@ -531,22 +531,9 @@ q:before, q:after {
         padding-top: 258px;
     }
 }
-@media only screen and (max-width: 1160px){
-    .box-how{
-        width: 960px;
-    }
-    .box-what{
-        width: 960px;
-    }
-    .box-who{
-        width: 960px;
-    }.thumb-servicos{
-        margin: 0 auto;
-    }#box-null{
-        display: none;
-    }
-}
-}
+
+ 
+
 
 
 
