@@ -54,7 +54,7 @@ q:before, q:after {
     height: 100px;
     width: 100%;    
     background: #F57637;
-    z-index: 300;
+    z-index: 400;
 }.menu .main-menu{
     list-style: none;
 
@@ -163,7 +163,7 @@ q:before, q:after {
 
 
 /*===== CONTENT WHAT =====*/
-.who{
+.what{
     padding-top: 100px;
     position: relative;
     display: block; 
@@ -173,7 +173,7 @@ q:before, q:after {
    
 }
 
-.img-who{
+.img-what{
     top: 50px;
     position: absolute;
     width: 100%;
@@ -185,7 +185,7 @@ q:before, q:after {
 }
 
 
-.box-who{
+.box-what{
     overflow: hidden;
     position: relative;
     display: block;
@@ -193,14 +193,14 @@ q:before, q:after {
     border: solid #2D2B6B 4px;
     
 }
-.bar-who-expert{
+.bar-what-expert{
     top: 150px;
     width: 100%;
     position: absolute;
     height: 150px;
     background: #2D2B6C;
-}.bar-who-servi{
-    top: 1080px;
+}.bar-what-servi{
+    top: 1737px;
     width: 100%;
     position: absolute;
     height: 150px;
@@ -210,7 +210,7 @@ q:before, q:after {
 
 
 
-.who-text{
+.what-text{
     padding-top: 350px;
     position: relative;
     width: 100%;
@@ -248,14 +248,14 @@ q:before, q:after {
     background: #2D2B6B;
 }
 .servicos {
-    padding-top: 40em;
+    padding-top: 47.4em;
 }
 
 
 .container-servicos{
     text-align: center;
     width: 220px;
-    height: 300px;
+    height: 279px;
     display: block;
     margin: 0 auto;
     
@@ -304,7 +304,7 @@ q:before, q:after {
 }
 
 /*===== CONTENT WHO =====*/
-.what{
+.who{
     position: relative;
     display: block;
     width: 100%;
@@ -313,7 +313,7 @@ q:before, q:after {
     
     
 }
-.img-what{
+.img-who{
     top: 50px;
     position: absolute;
     width: 100%;
@@ -323,24 +323,19 @@ q:before, q:after {
     background-position: top center;
     background-size: 60%;
 }
-.bar-what{
+.bar-who{
     top: 150px;
     width: 100%;
     display: block;
     position: absolute;
     height: 150px;
     background: #F57637;
-}.box-what{
-    position: relative;
-    display: block;
-    width: 1580px;
+}.box-who{ 
     height: auto;
-    margin: 100px auto;
     border: solid #F57637 4px;
-
 }
 
-.what-text{
+.who-text{
     padding-top: 10em;
     position: relative;
     width: 100%;
@@ -352,28 +347,64 @@ q:before, q:after {
 }
 .thumb{
     padding-top: 23em;
+    width: 100%;
+    height: auto;
 }
-
+.expert{
+    top: 1080px;
+    width: 100%;
+    position: absolute;
+   
+    height: auto;
+}.bloco{
+    height: auto;
+    
+}
+.thumb-expert{
+    position: relative;
+    width: 300px;
+    height: auto;
+    max-height: 550px;
+    overflow: hidden;
+    background: #fff;
+    margin: 10px auto;
+    z-index: 300;
+}
+.thumb-expert-img{
+    position: relative;
+    width: 270px;
+    height: 270px;
+    margin: 10px auto;
+    background: #2D2B6B;
+    
+}.thumb-bloco{
+   
+    margin-right: 3%;
+    
+}
 
 .thumb-bloco:nth-child(5n){
         margin-right: 0;
 }
-@media only screen and (min-width: 1200px){
-    .thumb-bloco{
-        margin-right: 3%;
-    }
-}
-.thumbnail{
-    display: inline-block;
+.thumbnail-fun{
+    
     position: relative;
     width: 200px;
     height: 320px;
     background: #fff;
     margin: 0 auto;
     text-align: center;
-    
+   
 
-} .thumb-bloco:nth-child(5n){
+} 
+@media only screen and (max-width: 1200px){
+    .thumb-bloco{
+        margin-right: 3%;
+    }.bar-what-servi{
+        top: 2077px;
+    }
+}
+.thumb-bloco:nth-child(5n){
     margin-right: 0%;
 }
 
@@ -471,8 +502,12 @@ q:before, q:after {
     padding-top: 157px;
 }
 .box-where{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: auto;
     border: solid #cecece 4px;
-    z-index: 300;
+    
 }
 .bar-where{
     top: 243px;
@@ -483,7 +518,7 @@ q:before, q:after {
     background:  #cecece;
 }
 .img-where{
-    top: 101px;
+    top: 50px;
     position: absolute;
     width: 100%;
     height: 550px;
@@ -521,22 +556,13 @@ q:before, q:after {
 
 
 
-@media only screen and (max-width: 1582px){
+@media only screen and (max-width: 1194px){
     
-    .thumb .container-thumb .thumb-bloco {
-            width: 300px;
-            height: 420px;
-    }.bar-who-expert .title-bar{
-        font-size: 4em;
-        padding-top: 0.5em;
-    }.bar-who-servi .title-bar{
-        font-size: 4em;
-        padding-top: 0.5em;
-    }
-    .how-text{
-        font-size: 1.7em;
-        padding-top: 258px;
-    }
+   .servicos{
+    padding-top: 57.4em;
+   }.box-null{
+       display: none;
+   }
 }
 
  
@@ -546,8 +572,11 @@ q:before, q:after {
 
 /*======== MOBILE =========*/
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 990px){
     /* =====ESTILO DO MENU MOBILE===== */
+    .title-where{
+        font-size: 3em;
+    }
     .what-text {
         font-size: 1.3em;
         line-height: 1.5em;
@@ -632,11 +661,14 @@ q:before, q:after {
     }.row-box{
         width: 100%;
     }.servicos{
-        padding-top: 20em;
+        padding-top: 125em;
     }#box-null{
         display: none;
     }
-}@media only screen and (max-width: 420px){
+    .bar-what-servi{
+        top: 3060px;
+    }
+}@media only screen and (max-width: 490px){
     .bar-how .title-bar{
         padding: 0;
         font-size: 2.5em;
@@ -649,5 +681,7 @@ q:before, q:after {
     .bar-who-servi .title-bar {
         font-size: 2.5em;
         padding-top: 0.5em;
+    }.servicos {
+        padding-top: 90em;
     }
 }
