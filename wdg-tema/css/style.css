@@ -3,62 +3,162 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
     /*font-family: 'Rajdhani', sans-serif;*/
     font-family: 'Fira Sans', sans-serif;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}body {
-	line-height: 1;
-}ol, ul {
-	list-style: none;
-}blockquote, q {
-	quotes: none;
-}blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-*{
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
     box-sizing: border-box;
 }
+
 /* ==== FIM RESET ====*/
 
 /* =====ESTILO DO MENU===== */
-.menu{
+
+.menu {
     position: fixed;
     height: 100px;
-    width: 100%;    
+    width: 100%;
     background: #F57637;
     z-index: 400;
-}.menu .main-menu{
+}
+
+.menu .main-menu {
     list-style: none;
 
-}.menu .main-menu .item-menu{
+}
+
+.menu .main-menu .item-menu {
     display: inline-block;
     margin: 5px;
     margin-top: 2rem;
@@ -74,26 +174,36 @@ q:before, q:after {
     background: #fff;
     width: auto;
 
-}.menu .main-menu .item-menu a{
+}
+
+.menu .main-menu .item-menu a {
     text-decoration: none;
     color: #2D2B6C;
     font-size: 46px;
-}.menu .main-menu .item-menu a:hover{
+}
+
+.menu .main-menu .item-menu a:hover {
     color: rosybrown;
 }
-/* =====ESTILO DO LOGO===== */
-.menu .logo{
-        position: absolute;
-        padding-top: 25px;
 
-}.menu-fixo{
+/* =====ESTILO DO LOGO===== */
+
+.menu .logo {
+    position: absolute;
+    padding-top: 25px;
+
+}
+
+.menu-fixo {
     position: fixed;
     z-index: 1080;
     top: 0;
 
 }
+
 /* =====ESTILO DO CABECALHO===== */
-.cabecalho{
+
+.cabecalho {
     width: 100%;
     height: 920px;
     background-image: url("../img/cabecalho-wdg.png");
@@ -104,19 +214,23 @@ q:before, q:after {
     position: relative;
     display: block;
 }
+
 /* =====ESTILO DO LOGO-CABECALHO===== */
 
-
 /*===== CONTENT HOW =====*/
-.how{
+
+.how {
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 100px;
-    
-}.how-img{
-    margin-top: -150px;
+
+}
+
+.how-img {
+    top: 10px;
     position: absolute;
     display: block;
     width: 100%;
@@ -126,80 +240,85 @@ q:before, q:after {
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
- 
-    
+    z-index: -1;
+
 }
-.box-how{
-    margin-top: 128px;
-    position: relative;
-    display: block;
-    height: auto;
+
+.box-how {
     border: solid #F57637 4px;
-    overflow: auto;
 }
-.bar-how{
-    top: 50px;
+
+.bar-how {
+    top: 150px;
     width: 100%;
     display: block;
     position: absolute;
-    height: 150px;
+    max-height: 130px;
     background: #F57637;
 }
-.title-bar{
+
+.title-bar {
     color: #fff;
     font-size: 80px;
     text-align: center;
-    padding-top: 10px;
+    line-height: 100px;
 }
-.how-text{
+
+.how-text {
     padding-top: 250px;
     position: relative;
     font-size: 35px;
     text-align: center;
     color: #2D2B6C;
     font-weight: 600;
-    
+
 }
 
 
 /*===== CONTENT WHAT =====*/
-.what{
+
+.what {
     padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
-    display: block; 
+    display: block;
     width: 100%;
     height: auto;
-    background:  hsl(20,90%,59%);
-   
+    background: hsl(20, 90%, 59%);
+
 }
 
-.img-what{
+.img-what {
     top: 50px;
     position: absolute;
     width: 100%;
     height: 550px;
-    background-image:  url("../img/WHO/BG\ WHO.png");
+    background-image: url("../img/WHO/BG\ WHO.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 60%;
+    z-index: 0;
 }
 
 
-.box-what{
+.box-what {
     overflow: hidden;
     position: relative;
     display: block;
     height: auto;
     border: solid #2D2B6B 4px;
-    
+
 }
-.bar-what-expert{
+
+.bar-what-expert {
     top: 150px;
     width: 100%;
     position: absolute;
-    height: 150px;
+    max-height: 130px;
     background: #2D2B6C;
-}.bar-what-servi{
+}
+
+.bar-what-servi {
     top: 1737px;
     width: 100%;
     position: absolute;
@@ -210,7 +329,7 @@ q:before, q:after {
 
 
 
-.what-text{
+.what-text {
     padding-top: 350px;
     position: relative;
     width: 100%;
@@ -220,17 +339,19 @@ q:before, q:after {
     font-weight: 300;
     line-height: 50px;
 }
-.blocos{
+
+.blocos {
     position: absolute;
     top: 860px;
     display: block;
     width: 100%;
     height: 870px;
     background: #000;
-    
+
 }
-.blocos .bloco{
-    display:block;
+
+.blocos .bloco {
+    display: block;
     position: relative;
     width: 20%;
     height: 100%;
@@ -239,7 +360,7 @@ q:before, q:after {
     float: left;
 }
 
-.bloco-img{
+.bloco-img {
     position: relative;
     padding-top: 50px;
     width: 275px;
@@ -247,95 +368,108 @@ q:before, q:after {
     height: 30%;
     background: #2D2B6B;
 }
+
 .servicos {
-    padding-top: 47.4em;
+    margin-top: 47.4em;
 }
 
 
-.container-servicos{
+.container-servicos {
     text-align: center;
     width: 220px;
     height: 279px;
     display: block;
     margin: 0 auto;
-    
+
 }
 
-.title-servicos{
+.title-servicos {
     padding-top: 0;
     font-size: 20px;
-    color:#2D2B6B; 
+    color: #2D2B6B;
 }
+
 .img-servicos {
     display: block;
     position: relative;
-    width: 120px;
+    max-width: 120px;
     height: auto;
     margin: 10px auto;
 }
-.box{
+
+.box {
     display: block;
     position: relative;
-    width: 220px;
+    max-width: 220px;
     height: auto;
     background: #fff;
     margin: 0 auto;
-     
-    
+
+
 }
-.box1 .img-servicos{
+
+.box1 .img-servicos {
     width: 120px;
     height: auto;
     margin: 60px auto;
 }
-.box1{
+
+.box1 {
     display: inline-block;
     position: relative;
     width: 262px;
     height: 260px;
     background: #fff;
-    
+
 }
-.row-box{
-   display: inline-block;
+
+.row-box {
+    display: inline-block;
     width: 720px;
     height: auto;
     margin: 0 auto;
 }
 
 /*===== CONTENT WHO =====*/
-.who{
+
+.who {
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
     background: #bababab5;
-    
-    
+
+
 }
-.img-who{
+
+.img-who {
     top: 50px;
     position: absolute;
     width: 100%;
     height: 720px;
-    background-image:  url("../img/WHO/wdg\ who.png");
+    background-image: url("../img/WHO/wdg\ who.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 60%;
+    z-index: -1;
 }
-.bar-who{
+
+.bar-who {
     top: 150px;
     width: 100%;
     display: block;
     position: absolute;
-    height: 150px;
+    max-height: 130px;
     background: #F57637;
-}.box-who{ 
-    height: auto;
+}
+
+.box-who {
     border: solid #F57637 4px;
 }
 
-.who-text{
+.who-text {
     padding-top: 10em;
     position: relative;
     width: 100%;
@@ -345,80 +479,83 @@ q:before, q:after {
     font-weight: 300;
     line-height: 50px;
 }
-.thumb{
+
+.thumb {
     padding-top: 23em;
     width: 100%;
     height: auto;
 }
-.expert{
+
+.expert {
     top: 1080px;
     width: 100%;
     position: absolute;
-   
+
     height: auto;
-}.bloco{
-    height: auto;
-    
 }
-.thumb-expert{
-    position: relative;
-    width: 300px;
+
+.bloco {
     height: auto;
+
+}
+
+.thumb-expert {
+    position: relative;
+    max-width: 300px;
     max-height: 550px;
     overflow: hidden;
     background: #fff;
     margin: 10px auto;
     z-index: 300;
 }
-.thumb-expert-img{
+
+.thumb-expert-img {
     position: relative;
-    width: 270px;
+    max-width: 270px;
     height: 270px;
     margin: 10px auto;
     background: #2D2B6B;
-    
-}.thumb-bloco{
-   
-    margin-right: 3%;
-    
+
 }
 
-.thumb-bloco:nth-child(5n){
-        margin-right: 0;
+.thumb-bloco {
+
+    margin-right: 3.2%;
+
 }
-.thumbnail-fun{
-    
+
+.thumb-bloco:nth-child(5n) {
+    margin-right: 0;
+}
+
+.thumbnail-fun {
+
     position: relative;
     width: 200px;
     height: 320px;
     background: #fff;
     margin: 0 auto;
     text-align: center;
-   
 
-} 
-@media only screen and (max-width: 1200px){
-    .thumb-bloco{
-        margin-right: 3%;
-    }.bar-what-servi{
-        top: 2077px;
-    }
+
 }
-.thumb-bloco:nth-child(5n){
+
+
+.thumb-bloco:nth-child(5n) {
     margin-right: 0%;
 }
 
-.thumb-img{
+.thumb-img {
     max-width: 170px;
     min-height: 170px;
     position: relative;
     display: block;
     margin: 1em auto;
     top: 0;
-    
+
 }
 
-.text-thumb-container{
+.text-thumb-container {
     position: relative;
     display: block;
     width: 100%;
@@ -427,110 +564,137 @@ q:before, q:after {
     padding: 10px 0 50px 0;
 }
 
-.text-thumb-name{
+.text-thumb-name {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 900;
     color: #2D2B6B;
     font-family: 'Fira Sans', sans-serif;
-    
+
 }
-.text-thumb{
+
+.text-thumb {
     text-transform: uppercase;
-    font-size:12px;
+    font-size: 12px;
     color: #2D2B6B;
     font-weight: 600;
     line-height: 30px;
     font-family: 'Fira Sans', sans-serif;
 }
+
 /* CSS FOTOS FUNC */
 
- #img-felipe{
+#img-felipe {
+    top: 1em;
     position: relative;
     display: block;
     background-image: url("../img/fotos/felipe\ wdg.png");
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+    
 }
-#img-victor{
+
+#img-victor {
+    top: 1em;
     position: relative;
     display: block;
     background-image: url("../img/fotos/victor\ wdg.png");
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+   
 }
-#img-ferreirinha{
+
+#img-ferreirinha {
+    top: 1em;
     position: relative;
     display: block;
     background-image: url("../img/fotos/ferreirinha\ wdg.png");
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+    
 }
-#img-jose{
+
+#img-jose {
+    top: 1em;
     position: relative;
     display: block;
     background-image: url("../img/fotos/felipe\ wdg.png");
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+    
 }
-#img-diego{
+
+#img-diego {
+    top: 1em;
     position: relative;
     display: block;
     background-image: url("../img/fotos/ferreirinha\ wdg.png");
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-} 
-.img-linkdin{
+    
+}
+
+.img-linkdin {
     display: block;
     position: absolute;
     right: 10px;
     top: 10px;
 
 }
+
 /*===== CONTENT WHERE =====*/
-.where{
+
+.where {
+
     position: relative;
     display: block;
     width: 100%;
     height: auto;
     background-color: #2D2B6B;
-    padding-top: 157px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-.box-where{
+
+.box-where {
     overflow: hidden;
     position: relative;
     display: block;
     height: auto;
     border: solid #cecece 4px;
-    
+
 }
-.bar-where{
+
+.bar-where {
     top: 243px;
     width: 100%;
     display: block;
     position: absolute;
-    height: 150px;
-    background:  #cecece;
+    max-height: 130px;
+    background: #cecece;
 }
-.img-where{
+
+.img-where {
     top: 50px;
     position: absolute;
     width: 100%;
     height: 550px;
-    background-image:  url("../img/WHERE/BG\ WHERE.png");
+    background-image: url("../img/WHERE/BG\ WHERE.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 80%;
+    z-index: 0;
 }
-.title-where{
+
+.title-where {
     color: #2D2B6B;
 }
-.text-where{
+
+.text-where {
     padding-top: 350px;
     position: relative;
     width: 100%;
@@ -540,13 +704,17 @@ q:before, q:after {
     font-weight: 300;
     line-height: 50px;
 }
-.box-map{
+
+.box-map {
     border: solid #cecece 4px;
     height: 550px;
-}#mapa{
+}
+
+#mapa {
     margin-bottom: 30px;
 }
-.linha{
+
+.linha {
     width: 100%;
     position: relative;
     display: block;
@@ -554,28 +722,76 @@ q:before, q:after {
 
 /*======== MD CSS =========*/
 
+@media only screen and (min-width: 1200px) {
 
-
-@media only screen and (max-width: 1194px){
-    
-   .servicos{
-    padding-top: 57.4em;
-   }.box-null{
-       display: none;
-   }
+   
 }
 
- 
+@media only screen and (max-width: 490px) {
+    .bar-how .title-bar {
+        padding: 0;
+        font-size: 2.5em;
+
+    }
+    .bar-who-expert .title-bar {
+        padding-top: 0.9em;
+        font-size: 2.5em;
+    }
+    .bar-who-servi .title-bar {
+        font-size: 2.5em;
+        padding-top: 0.5em;
+    }
+
+}
 
 
 
 
-/*======== MOBILE =========*/
+/*======== MEDIAS AQUII!!!
 
-@media only screen and (max-width: 990px){
-    /* =====ESTILO DO MENU MOBILE===== */
-    .title-where{
+@media screen and (min-width:320px) { 
+    
+ELE EXECUTA O CSS APARTIR DE 320PX PARA CIMA, SE( WIDTH<320PX){ 
+    
+    PARA
+
+} 
+
+}
+
+@media screen and (max-width:760px) { 
+
+ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){ 
+    
+    PARA
+
+}
+
+}
+
+
+=========*/
+
+
+@media (max-width: 480px){
+      .menu .main-menu {
+        display: none;
+    }
+    .menu .logo {
+        text-align: center;
+        position: relative;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    .title-where {
         font-size: 3em;
+    }
+    .menu .main-menu {
+        display: none;
+    }
+    .menu .logo {
+        text-align: center;
+        position: relative;
     }
     .what-text {
         font-size: 1.3em;
@@ -585,65 +801,97 @@ q:before, q:after {
         display: block;
         padding-top: 15em;
     }
-    .menu .main-menu{
-        display: none;
-    }.menu .logo{
-        text-align: center;
-        position: relative;
-    }
-    .cabecalho .logo-cabecalho{
+
+    .cabecalho .logo-cabecalho {
         margin-top: 5rem;
         margin-bottom: 3rem;
-        
-    }.cabecalho{
+
+    }
+    .cabecalho {
         width: 100vw;
         height: 640vh;
     }
-    #spacing-button{
+    #spacing-button {
         display: none;
-    }.container-fluid .row .how{
-        background-size: 100%;
-    }.how-text{
+    }
+    .how-text {
         top: 0;
     }
-    
-    .bar-how{
-        top: -133px;
-    }.bar-how .title-bar{
-        padding-top: 0.5em;
+
+    .bar-how {
+        top: -18vh;
+        height: 10em;
+    }
+    .bar-what-expert {
+        top: 0vh;
+        height: 10em;
+    }
+    .bar-how .title-bar {
+
         font-size: 3em;
-      
-    }.box-how{
+
+    }
+    .how {
+        padding-top: 0;
+    }
+    .what {
+        padding-top: 0;
+    }
+    .who {
+        padding-top: 0;
+    }
+    .who-text{
+        padding-top: 7em;
+    }
+    .box-how {
         width: 100%;
         overflow: scroll;
+        margin: 0;
     }
-    .container-fluid .row .what{
-        background-size: 100%;
+    .img-where {
+        background-size: 100vw;
+        top: 26vh;
     }
-    .img-what{
-        background-size: 100%;
+    .img-what {
+        background-size: 100vw;
+        top: 23vh;
     }
-    .box-what{
+    .how-img {
+        background-size: 100vw;
+        top: -25vh;
+
+    }
+    .img-who {
+        background-size: 100vw;
+        top: 23vh;
+
+    }
+    .box-what {
         width: 100%;
         margin: 0;
-    }.bar-what{
-        top: 0px;
-    }.bar-what-expert .title-bar{
-        padding-top: 0.5em;
-        font-size: 3em;
-    }.bar-what-servi {
-        top: 60em;
     }
-    .bar-what-servi .title-bar{
-        padding-top: 0.5em;
+    .img-where {
+        background-size: 100vw;
+        top: 24vh;
+    }
+    .bar-what {
+        top: 0px;
+    }
+    .bar-what-expert .title-bar {
         font-size: 3em;
-    }.container-fluid .row .what{
-        background-size: 100%;
-    } .blocos .bloco{
+    }
+
+    .bar-what-servi .title-bar {
+
+        font-size: 3em;
+    }
+
+    .blocos .bloco {
         clear: both;
         width: 100%;
         margin: 0px;
-    }.what-text {
+    }
+    .what-text {
         font-size: 1.5em;
     }
     .bar-who .title-bar {
@@ -651,37 +899,119 @@ q:before, q:after {
     }
     .bar-who {
         z-index: 1080;
-    }.box-who {
-        width: 100%;
+        top: 0;
+        box-shadow: 0px -10px 44px 10px #2d2b6b7d;
+    }
+    .bar-where {
+        top: 0vh;
+    }
+    .where {
+        padding-top: 0;
     }
     .thumb .container-thumb {
         width: 100%;
-    }.thumb-servicos{
+    }
+    .thumb-servicos {
         margin: 0 auto;
-    }.row-box{
+    }
+    .row-box {
         width: 100%;
-    }.servicos{
-        padding-top: 125em;
-    }#box-null{
+    }
+
+    .box-null{
+     display: none;
+    }
+    .bar-what-servi {
+        top: 570vh;
+        max-height: 10em;
+    }
+    .bar-thumb {
+        margin-top: 50vh;
+    }
+    .servicos {
+        margin-top: 350vh;
+    }
+    .expert {
+        top: 200vh;
+    }.thumb-bloco {
+        margin: 0;
+    }
+
+}
+@media(min-width: 600px) and (max-width: 768px){
+     .menu .main-menu {
         display: none;
     }
+    .menu .logo {
+        text-align: center;
+        position: relative;
+    }
+    
+    .title-bar{
+        font-size: 3em;
+    }
+    .bar-what-expert{
+        top: 0;
+    }
+    .img-what{
+        background-size: 100vw;
+        top: 9em;
+    }
+    .img-who{
+        background-size: 100vw;
+        top: 23vh;
+    }
+    .img-where{
+        background-size: 100vw;
+        top: 24vh;
+    }
+    .who-text{
+        padding-top: 4em;
+    }
+    .expert{
+        top: 156vh;
+    }
+    .servicos{
+            margin-top: 315vh;
+
+    }
+    .bar-how{
+        top: 0;
+    }
+    .how-img{
+        top: -8vh;
+    }
     .bar-what-servi{
-        top: 3060px;
+            top: 520vh;
     }
-}@media only screen and (max-width: 490px){
-    .bar-how .title-bar{
-        padding: 0;
-        font-size: 2.5em;
-      
+    .bar-who{
+        top: 0;
     }
-    .bar-who-expert .title-bar{
-        padding-top: 0.9em;
-        font-size: 2.5em;
+    .bar-where{
+        top: 0;
     }
-    .bar-who-servi .title-bar {
-        font-size: 2.5em;
-        padding-top: 0.5em;
-    }.servicos {
-        padding-top: 90em;
+    .title-bar{
+        font-size: 3em;
+    }
+    
+    .box-null{
+     display: none;
+    }
+    .thumb-bloco {
+        margin: 0;
     }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+     .menu .main-menu {
+        display: none;
+    }
+    .menu .logo {
+        text-align: center;
+        position: relative;
+    }
+    .thumb-bloco {
+        margin: 0;
+    }
+}
+
