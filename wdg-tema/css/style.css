@@ -148,32 +148,30 @@ table {
 .menu {
     position: fixed;
     height: 100px;
+    max-height: 100%;
     width: 100%;
     background: #F57637;
     z-index: 400;
+    display: block;
+    position: relative;
 }
 
-.menu .main-menu {
+.menu ul {
     list-style: none;
-
+    position: absolute;
+    right: 0.7978723404255319%;
+    top: 4px;
 }
 
-.menu .main-menu .item-menu {
+.menu ul li {
     display: inline-block;
-    margin: 5px;
-    margin-top: 2rem;
-    margin-right: 15px;
-
-    padding-left: 10px;
-    padding-right: 10px;
-    float: right;
-
+    width: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
     font-size: 42px;
     font-family: sans-serif;
-
     background: #fff;
-    width: auto;
-
+    margin-right: 5px;
 }
 
 .menu .main-menu .item-menu a {
@@ -189,9 +187,11 @@ table {
 /* =====ESTILO DO LOGO===== */
 
 .menu .logo {
-    position: absolute;
-    padding-top: 25px;
-
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
 }
 
 .menu-fixo {
@@ -237,7 +237,7 @@ table {
     height: 550px;
     background-image: url("../img/HOW/wdg-how.png");
     background-attachment: scroll;
-    background-position: center;
+    background-position: top center;
     background-size: 60%;
     background-repeat: no-repeat;
     z-index: -1;
@@ -245,6 +245,7 @@ table {
 }
 
 .box-how {
+    overflow: hidden;
     border: solid #F57637 4px;
 }
 
@@ -261,7 +262,7 @@ table {
     color: #fff;
     font-size: 80px;
     text-align: center;
-    line-height: 100px;
+    
 }
 
 .how-text {
@@ -318,11 +319,11 @@ table {
     background: #2D2B6C;
 }
 
-.bar-what-servi {
+.bar-what-servi-desck {
     top: 1737px;
     width: 100%;
     position: absolute;
-    height: 150px;
+    max-height: 130px;
     background: #2D2B6C;
 }
 
@@ -370,7 +371,7 @@ table {
 }
 
 .servicos {
-    margin-top: 47.4em;
+    padding-top: 1080px;
 }
 
 
@@ -476,7 +477,7 @@ table {
     font-size: 35px;
     text-align: center;
     color: #2D2B6B;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 50px;
 }
 
@@ -486,7 +487,7 @@ table {
     height: auto;
 }
 
-.expert {
+.expert-desck {
     top: 1080px;
     width: 100%;
     position: absolute;
@@ -719,33 +720,17 @@ table {
     position: relative;
     display: block;
 }
-
-/*======== MD CSS =========*/
-
-@media only screen and (min-width: 1200px) {
-
-   
+.clear-fix{
+    clear: both;
 }
-
-@media only screen and (max-width: 490px) {
-    .bar-how .title-bar {
-        padding: 0;
-        font-size: 2.5em;
-
-    }
-    .bar-who-expert .title-bar {
-        padding-top: 0.9em;
-        font-size: 2.5em;
-    }
-    .bar-who-servi .title-bar {
-        font-size: 2.5em;
-        padding-top: 0.5em;
-    }
-
+.bar-what-servi-mobile{
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 80px;
+    background: #2D2B6C;
+    
 }
-
-
-
 
 /*======== MEDIAS AQUII!!!
 
@@ -777,9 +762,105 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
       .menu .main-menu {
         display: none;
     }
-    .menu .logo {
+    .menu div {
         text-align: center;
         position: relative;
+    }
+    
+    .how{
+        padding-top: 0;
+    }.bar-how{
+        top: 60px;
+        height: auto;
+        min-height: 80px;
+        
+    }
+    .how-text {
+        padding-top: 360px;
+        font-size: 2.3em;
+    }
+    .bar-how .title-bar {
+        padding-top: 24px;
+        font-size: 1.9em;
+    }
+    .bar-what-expert{
+        top: 60px;
+        height: auto;
+        min-height: 80px;
+    }
+    .bar-what-servi-mobile .title-bar{
+        padding-top: 24px;
+        font-size: 2.3em;
+        margin: 0;
+    }
+    .title-bar{
+        padding-top: 24px;
+        font-size: 2.3em;
+        margin: 0;
+    }
+    .how-img{
+        top: 185px;
+        background-size: 100vw;
+    }
+    .img-what{
+        top: 189px;
+        background-size: 100vw;
+    }
+    
+    .img-who{
+        top: 189px;
+        background-size: 100vw;
+    }
+    .where{
+        padding-top: 0;
+    }.bar-where{
+        top: 60px;
+        height: auto;
+        min-height: 80px;
+    }.img-where{
+        top: 190px;
+        background-size: 100vw;
+    }
+    
+    .who-text{
+        padding-top: 340px;
+        font-size: 2.3em;
+    }.expert-desck{
+        display: none;
+    }
+     .expert-desck{
+        display:none;
+    }
+    
+    .box-what .expert-mobile{
+        display: block;
+    }
+    .bar-what-servi-desck{
+        display: none;
+    }
+    .servicos{
+        margin-top: 0;
+        padding-top: 50px;
+    }bar-what-servi-mobile .title-bar{
+        font-size: 2.3em;
+        margin: 0;
+        line-height: 125px;
+    }
+    .box-null{
+        display: none;
+    }
+    .what{
+        padding-top: 0;
+    }
+    .who{
+        padding-top: 0;
+    }
+    .bar-who{
+        top: 60px;
+        height: auto;
+        min-height: 80px;
+    }.thumb-bloco{
+        margin-right: 0;
     }
 }
 @media (min-width: 480px) and (max-width: 600px) {
@@ -789,7 +870,7 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .menu .main-menu {
         display: none;
     }
-    .menu .logo {
+     .menu div {
         text-align: center;
         position: relative;
     }
@@ -936,13 +1017,22 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     }.thumb-bloco {
         margin: 0;
     }
-
+     .expert-desck{
+        display:none;
+    }
+    
+    .box-what .expert-mobile{
+        display: block;
+    }
+    .bar-what-servi-desck{
+        display: none;
+    }
 }
-@media(min-width: 600px) and (max-width: 768px){
+@media(min-width: 600px) and (max-width: 764px){
      .menu .main-menu {
         display: none;
     }
-    .menu .logo {
+     .menu div {
         text-align: center;
         position: relative;
     }
@@ -1000,18 +1090,39 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .thumb-bloco {
         margin: 0;
     }
-}
-@media (min-width: 768px) and (max-width: 1200px) {
+     .expert-desck{
+        display:none;
+    }
     
-     .menu .main-menu {
+    .box-what .expert-mobile{
+        display: block;
+    }.bar-what-servi-desck{
         display: none;
     }
-    .menu .logo {
-        text-align: center;
-        position: relative;
+}
+@media (min-width: 764px) and (max-width: 1200px) {
+    
+   .box-what .expert-mobile{
+        display: none;
     }
-    .thumb-bloco {
-        margin: 0;
+    .expert-desck{
+        display:block;
     }
+    .bar-what-servi-mobile{
+        display: none;
+    }
+}
+@media(min-width: 1200px){
+    
+    .box-what .expert-mobile{
+        display: none;
+    }
+    .expert-desck{
+        display:block;
+    }
+    .bar-what-servi-mobile{
+        display: none;
+    }
+    
 }
 
