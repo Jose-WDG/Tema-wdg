@@ -147,31 +147,35 @@ table {
 
 .menu {
     position: fixed;
-    height: 100px;
+    display: inline-flex;
+    background: #F57637;
+    align-items: center;
+    z-index: 400;
+    height: 120px;
+    min-height: 0.41%;
     max-height: 100%;
     width: 100%;
-    background: #F57637;
-    z-index: 400;
-    display: block;
-    position: relative;
 }
-
+.menu-width{
+    width: 100%;
+}
 .menu ul {
     list-style: none;
-    position: absolute;
-    right: 0.7978723404255319%;
-    top: 4px;
+    height: auto;
+    float: right;
+    
 }
 
 .menu ul li {
-    display: inline-block;
+    text-align: center;
+    display: inline-flex;
     width: auto;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    height: 1.5em;
     font-size: 42px;
     font-family: sans-serif;
     background: #fff;
     margin-right: 5px;
+    align-items: center;
 }
 
 .menu .main-menu .item-menu a {
@@ -187,11 +191,12 @@ table {
 /* =====ESTILO DO LOGO===== */
 
 .menu .logo {
-    position: relative;
-    display: inline-block;
-    padding-top: 30px;
-    max-width: 100%;
-    height: auto;
+    height: 50%;
+    display: inline-flex;
+    align-items: center;
+}
+.menu .logo .logo-img{
+    margin: 0 ;
 }
 
 .menu-fixo {
@@ -225,7 +230,7 @@ table {
     position: relative;
     display: block;
     width: 100%;
-    height: auto;
+    height: 720px;
 
 }
 
@@ -247,15 +252,19 @@ table {
 .box-how {
     overflow: hidden;
     border: solid #F57637 4px;
+    height: 600px;
+    position: relative;
 }
 
 .bar-how {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: absolute;
+    background: #F57637;
     top: 150px;
     width: 100%;
-    display: block;
-    position: absolute;
-    max-height: 130px;
-    background: #F57637;
+    height: 22.5%;
 }
 
 .title-bar {
@@ -284,7 +293,7 @@ table {
     position: relative;
     display: block;
     width: 100%;
-    height: auto;
+    height: 2925px;
     background: hsl(20, 90%, 59%);
 
 }
@@ -312,18 +321,24 @@ table {
 }
 
 .bar-what-expert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 150px;
     width: 100%;
-    position: absolute;
-    max-height: 130px;
+    height: 5.538461538461538%;
     background: #2D2B6C;
 }
 
 .bar-what-servi-desck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 1737px;
     width: 100%;
-    position: absolute;
-    max-height: 130px;
+    height: 5.538461538461538%;
     background: #2D2B6C;
 }
 
@@ -377,7 +392,6 @@ table {
 
 .container-servicos {
     text-align: center;
-    width: 220px;
     height: 279px;
     display: block;
     margin: 0 auto;
@@ -386,6 +400,7 @@ table {
 
 .title-servicos {
     padding-top: 0;
+    max-width: 220px;
     font-size: 20px;
     color: #2D2B6B;
 }
@@ -439,7 +454,7 @@ table {
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 1594px;
     background: #bababab5;
 
 
@@ -458,16 +473,19 @@ table {
 }
 
 .bar-who {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 150px;
     width: 100%;
-    display: block;
-    position: absolute;
-    max-height: 130px;
+    height: 10.16311166875784%;
     background: #F57637;
 }
 
 .box-who {
     border: solid #F57637 4px;
+    height: auto;
 }
 
 .who-text {
@@ -503,7 +521,7 @@ table {
 .thumb-expert {
     position: relative;
     max-width: 300px;
-    max-height: 550px;
+    height: 550px;
     overflow: hidden;
     background: #fff;
     margin: 10px auto;
@@ -655,7 +673,7 @@ table {
     position: relative;
     display: block;
     width: 100%;
-    height: auto;
+    height: 2038px;
     background-color: #2D2B6B;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -671,11 +689,13 @@ table {
 }
 
 .bar-where {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 243px;
     width: 100%;
-    display: block;
-    position: absolute;
-    max-height: 130px;
+    height: 7.948969578017664%;
     background: #cecece;
 }
 
@@ -770,36 +790,41 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .how{
         padding-top: 0;
     }.bar-how{
-        top: 60px;
-        height: auto;
-        min-height: 80px;
-        
+        top: 8.333333333333333%;
+    }
+    .box-how {
+        height: 620px;
+        margin-bottom: 100px;
+    }
+    .box-what{
+        height: 5437px;
+    }
+    .what{
+        height: 5537px;
     }
     .how-text {
-        padding-top: 360px;
-        font-size: 2.3em;
+        top: 15.33333333333333%;
+        font-size: 1.3em;
     }
     .bar-how .title-bar {
         padding-top: 24px;
         font-size: 1.9em;
     }
     .bar-what-expert{
-        top: 60px;
-        height: auto;
-        min-height: 80px;
+        top: 1.083619288423334%;
+        height: 2.925772078743002%;
     }
     .bar-what-servi-mobile .title-bar{
-        padding-top: 24px;
+        
         font-size: 2.3em;
         margin: 0;
     }
     .title-bar{
-        padding-top: 24px;
         font-size: 2.3em;
         margin: 0;
     }
     .how-img{
-        top: 185px;
+        top: 25.69444444444444%;
         background-size: 100vw;
     }
     .img-what{
@@ -814,19 +839,27 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .where{
         padding-top: 0;
     }.bar-where{
-        top: 60px;
-        height: auto;
-        min-height: 80px;
+        top: 2.051282051282051%;
     }.img-where{
         top: 190px;
         background-size: 100vw;
     }
     
     .who-text{
-        padding-top: 340px;
-        font-size: 2.3em;
+        top: 2.438143398952501%;
+        font-size: 1.3em;
+        line-height: 1.4em;
     }.expert-desck{
         display: none;
+    }.bar-what-servi-mobile{
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .bar-what-servi-mobile-row{
+     height: 162px;
     }
      .expert-desck{
         display:none;
@@ -843,7 +876,7 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
         padding-top: 50px;
     }bar-what-servi-mobile .title-bar{
         font-size: 2.3em;
-        margin: 0;
+            margin: 0;
         line-height: 125px;
     }
     .box-null{
@@ -856,9 +889,7 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
         padding-top: 0;
     }
     .bar-who{
-        top: 60px;
-        height: auto;
-        min-height: 80px;
+       top: 2.051282051282051%;
     }.thumb-bloco{
         margin-right: 0;
     }
@@ -866,6 +897,8 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
 @media (min-width: 480px) and (max-width: 600px) {
     .title-where {
         font-size: 3em;
+    }.box-how{
+        height: 600px;
     }
     .menu .main-menu {
         display: none;
@@ -1099,6 +1132,9 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     }.bar-what-servi-desck{
         display: none;
     }
+    .box-null{
+        display: none;
+    }
 }
 @media (min-width: 764px) and (max-width: 1200px) {
     
@@ -1109,6 +1145,9 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
         display:block;
     }
     .bar-what-servi-mobile{
+        display: none;
+    }
+    .box-null{
         display: none;
     }
 }
