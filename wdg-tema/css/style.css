@@ -5,24 +5,55 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* =====ESTILO DO MENU===== */
 .toggle-menu{
     display: none;
+    cursor: pointer;
 }
+
+.change .bar1{
+    transform: translateY(12px) rotate(45deg);
+    -moz-transform: translateY(12px) rotate(45deg);
+    -webkit-transform: translateY(12px) rotate(45deg);
+    -o-transform: translateY(12px) rotate(45deg);
+}
+.change .bar3{
+    transform: translateY(-7px) rotate(-45deg);
+    -moz-transform: translateY(-7px) rotate(-45deg);
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+    -o-transform: translateY(-7px) rotate(-45deg);
+
+}
+.change .bar2{
+   opacity: 0;
+}
+.bar1,.bar2,.bar3{
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+}
+
 .menu-verti{
-    height: 100%;
-    width: 100%;
+    display: none;
+    height: 100vh;
+    width: 100vw;
     background: #00000070;
     position: absolute;
-    z-index: 1080;
+    justify-content: center;
+    z-index: 200;
 }
 .vert-menu{
-    top: 50%;
     position: absolute;
-    
+    top: 200px;
+
 }
 .vert-menu .vert-item-menu{
-    
+
 }
 .vert-menu .vert-item-menu .vert-item-menu-link{
-    font-size: 40px;
+    font-size: 4em;
     color: #fff;
 }
 .toggle-menu a .toggle-menu-icon{
@@ -33,9 +64,30 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .menu {position: fixed;display: inline-flex;background: #F97F26;align-items: center;z-index: 400;height: 120px;min-height: 0.41%;max-height: 100%;width: 100%;}
 .menu-width{width: 100%;}
 .menu .main-menu {list-style: none;height: auto;float: right;   }
-.menu .main-menu li {text-align: center;display: inline-flex;width: auto;height: 1.5em;font-size: 42px;font-family: sans-serif;background: #fff;margin-right: 5px;align-items: center;}
-.menu .main-menu .item-menu a {text-decoration: none;color: #2D2B6C;font-size: 46px;}
-.menu .main-menu .item-menu a:hover {color: rosybrown;}
+.menu .main-menu li {
+  text-align: center;
+  display: inline-flex;
+  width: auto;
+  height: 1.5em;
+  font-size: 42px;
+  font-family: sans-serif;
+  background: #fff;
+  margin-right: 5px;
+  align-items: center;
+
+}
+.menu .main-menu .item-menu a {
+
+    text-decoration : none;
+    color : #2D2B6C;
+    font-size: 46px;
+    cursor: pointer;
+
+}
+
+.menu .main-menu .item-menu a:hover {
+    color: #F97F26;
+}
 
 /* =====ESTILO DO LOGO===== */
 .menu .logo {height: 50%;display: inline-flex;align-items: center;}
@@ -53,7 +105,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .how-img {top: 10px;position: absolute;display: block;width: 100%;height: 550px;background-image: url("../img/HOW/wdg-how.png");background-attachment: scroll;background-position: top center;background-size: 60%;background-repeat: no-repeat;z-index: -1;}
 .box-how {overflow: hidden;border: solid #F57637 4px;height: 600px;position: relative;}
 .bar-how {display: flex;align-items: center; justify-content: center;position: absolute;background: #f97f26;top: 150px;width: 100%;height: 22.5%;}
-.title-bar {color: #fff;font-size: 70px; 
+.title-bar {color: #fff;font-size: 70px;
      font-weight: 300;font-family: 'Rajdhani', sans-serif; }
 .how-text {padding-top: 250px;position: relative;font-size: 35px;text-align: center;color: #2D2B6C;font-weight: 600;}
 
@@ -127,20 +179,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*======== MEDIAS AQUII!!!
 
-@media screen and (min-width:320px) { 
-    
-ELE EXECUTA O CSS APARTIR DE 320PX PARA CIMA, SE( WIDTH<320PX){ 
-    
-    PARA
+@media screen and (min-width:320px) {
 
-} 
+ELE EXECUTA O CSS APARTIR DE 320PX PARA CIMA, SE( WIDTH<320PX){
+
+    PARA
 
 }
 
-@media screen and (max-width:760px) { 
+}
 
-ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){ 
-    
+@media screen and (max-width:760px) {
+
+ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
+
     PARA
 
 }
@@ -154,10 +206,15 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
 @media (max-width: 480px){
     .toggle-menu{
     display: block;
-}
-.vert-menu{
+    }
+    .menu-verti{
+        display: none;
+
+
+    }
+    .vert-menu{
     display: block;
-}
+    }
     .menu .main-menu {display: none;}
     .menu div {text-align: center;position: relative;}
     .how{padding-top: 0;}
@@ -192,18 +249,21 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .who{padding-top: 0;height: auto;}
     .bar-who{top: 2.051282051282051%;height: 162px;}
     .thumb-bloco{margin-right: 0;}
-  
+
 }
 
 
 
 @media (min-width: 480px) and (max-width: 600px) {
-      .toggle-menu{
+     .toggle-menu{
     display: block;
-}
-.vert-menu{
+    }
+    .menu-verti{
+        display: flex;
+    }
+    .vert-menu{
     display: block;
-}
+    }
     .title-where {font-size: 3em;}
     .box-how{height: 600px;}
     .menu .main-menu {display: none;}
@@ -251,20 +311,23 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .bar-what-servi-desck{display: none;}
     .bar-what-servi-mobile{ margin-top: 100px;width: 100%;position: relative;display: flex;align-items: center;height: 162px;justify-content: center;background: #2D2B6C;}
     .title-bar{font-size: 2.5em;}
-  
+
 }
 
 @media(min-width: 600px) and (max-width: 764px){
-      .toggle-menu{
+     .toggle-menu{
     display: block;
-}
-.vert-menu{
+    }
+    .menu-verti{
+        display: flex;
+    }
+    .vert-menu{
     display: block;
-}
+    }
      .menu .main-menu {display: none;}
      .menu div {text-align: center;position: relative;}
     /*======================== content HOW ========================*/
-    .how{padding-top: 0;height: auto; }  
+    .how{padding-top: 0;height: auto; }
     .bar-how{top: 60px;height: 162px;}
     .how-img{top: 215px;}
     /*======================== Content What ========================*/
@@ -298,13 +361,11 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .box-null{display: none;}
 }
 @media (min-width: 764px) and (max-width: 990px) {
-      .toggle-menu{
-    display: none;
-}
-.vert-menu{
+
+    .vert-menu{
     display: block;
-}
-    
+    }
+
     .box-what .expert-mobile{display: block;}
     .expert-desck{display:none;}
     .bar-what-servi-mobile{display: none;}
@@ -362,4 +423,3 @@ ELE EXECUTA O CSS ATÉ 760PX, SE (WIDHT > 760PX){
     .bar-who{height: 162px;}
     .bar-where{height: 162px;top: 150px;}
 }
-

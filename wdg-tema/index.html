@@ -26,41 +26,44 @@
 
 <body>
     <main>
-       <div class="menu-verti">
-            <ul class="vert-menu">
-                            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#how">HOW?</a></li>
-                            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#what">WHAT?</a></li>
-                            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#who">WHO?</a></li>
-                            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#where">WHERE?</a></li>
-            </ul>
-        </div>
-        
-        <header>
-           
-            <nav class="menu container-fluid">
-                   
-                    <div class="menu-width">
-                    <div class="logo">
-                        <a href="index.html"><img class="logo-img" src="img/HEADER/logo.png" alt="wdg-logo" title="wdg-logo"/></a>
-                    </div>
-                    <div class="toggle-menu">
-                        <a href="#"><i class="toggle-menu-icon fas fa-bars fa-3x"></i></a>
-                    </div>
-                    <!-- MENU HORIZONTAL-->
-                    <ul class="main-menu">
-                        <li class="item-menu text-center"><a class="text-center" href="#how">HOW?</a></li>
-                        <li class="item-menu text-center"><a href="#what">WHAT?</a></li>
-                        <li class="item-menu text-center"><a href="#who">WHO?</a></li>
-                        <li class="item-menu text-center"><a href="#where">WHERE?</a></li>
-                    </ul>
-                    <!-- MENU VERTICAL-->
-                    </div>
-                
-            </nav> 
-        
-        </header>
-       
-        
+    <div id="toggle-menu-verti" class="menu-verti">
+        <ul class="vert-menu" id="myDropdown">
+            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#how">HOW?</a></li>
+            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#what">WHAT?</a></li>
+            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#who">WHO?</a></li>
+            <li class="vert-item-menu text-center"><a class="vert-item-menu-link" href="#where">WHERE?</a></li>
+        </ul>
+    </div>
+    <header>
+
+        <nav class="menu container-fluid">
+
+            <div class="menu-width">
+                <div class="logo">
+                    <a href="index.html"><img class="logo-img" src="img/HEADER/logo.png" alt="wdg-logo" title="wdg-logo"/></a>
+                </div>
+                <div class="toggle-menu" onclick="toggleClick(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                   <!-- <a href="#" onclick="toggleClick()"><i class="toggle-menu-icon fas fa-bars fa-2x"></i></a> -->
+                </div>
+                <!-- MENU HORIZONTAL-->
+                <ul class="main-menu">
+
+                    <li class="item-menu text-center"><a href="#how">HOW?</a></li>
+                    <li class="item-menu text-center"><a href="#what">WHAT?</a></li>
+                    <li class="item-menu text-center"><a href="#who">WHO?</a></li>
+                    <li class="item-menu text-center"><a href="#where">WHERE?</a></li>
+                </ul>
+                <!-- MENU VERTICAL-->
+            </div>
+
+        </nav>
+
+    </header>
+
+
         <!-- CONTENT CABECALHO-->
 
         <section class="container-fluid">
@@ -168,11 +171,11 @@
                             NÃO TEM SEGREDO NENHUM. O AMADURECIMENTO DOS NEGÓCIOS REQUER TEMPO E</br>
                             DEDICAÇÃO QUE SÃO RETRIBUÍDOS COM CRESCIMENTOS EXPONENCIAIS
                         </article>
-                        
+
                         <div style="height: 100px;"></div>
-                        
+
                         <!-- Expertises para Mobile-->
-                        
+
                         <section class="expert-mobile">
 
                         <div class="<g></g> container-fluid">
@@ -222,7 +225,7 @@
                         </div>
 
                     </section>
-                   
+
                     <div class="row bar-what-servi-mobile-row">
                         <div class="bar-what-servi-mobile">
                             <h2 class="title-bar">NOSSO SERVIÇOS</h2>
@@ -462,6 +465,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
